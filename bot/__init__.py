@@ -168,9 +168,9 @@ except KeyError:
 try:
     INDEX_URL = getConfig('INDEX_URL')
     if len(INDEX_URL) == 0:
-        INDEX_URL = None
+        INDEX_URL = True
 except KeyError:
-    INDEX_URL = None
+    INDEX_URL = True
 try:
     TORRENT_DIRECT_LIMIT = getConfig('TORRENT_DIRECT_LIMIT')
     if len(TORRENT_DIRECT_LIMIT) == 0:
@@ -218,9 +218,9 @@ try:
     if STOP_DUPLICATE_MIRROR.lower() == 'true':
         STOP_DUPLICATE_MIRROR = True
     else:
-        STOP_DUPLICATE_MIRROR = False
+        STOP_DUPLICATE_MIRROR = True
 except KeyError:
-    STOP_DUPLICATE_MIRROR = False
+    STOP_DUPLICATE_MIRROR = True
 try:
     STOP_DUPLICATE_MEGA = getConfig('STOP_DUPLICATE_MEGA')
     if STOP_DUPLICATE_MEGA.lower() == 'true':
@@ -234,33 +234,33 @@ try:
     if VIEW_LINK.lower() == 'true':
         VIEW_LINK = True
     else:
-        VIEW_LINK = False
+        VIEW_LINK = True
 except KeyError:
-    VIEW_LINK = False
+    VIEW_LINK = True
 try:
     STOP_DUPLICATE_CLONE = getConfig('STOP_DUPLICATE_CLONE')
     if STOP_DUPLICATE_CLONE.lower() == 'true':
         STOP_DUPLICATE_CLONE = True
     else:
-        STOP_DUPLICATE_CLONE = False
+        STOP_DUPLICATE_CLONE = True
 except KeyError:
-    STOP_DUPLICATE_CLONE = False
+    STOP_DUPLICATE_CLONE = True
 try:
     IS_TEAM_DRIVE = getConfig('IS_TEAM_DRIVE')
     if IS_TEAM_DRIVE.lower() == 'true':
         IS_TEAM_DRIVE = True
     else:
-        IS_TEAM_DRIVE = False
+        IS_TEAM_DRIVE = True
 except KeyError:
-    IS_TEAM_DRIVE = False
+    IS_TEAM_DRIVE = True
 try:
     USE_SERVICE_ACCOUNTS = getConfig('USE_SERVICE_ACCOUNTS')
     if USE_SERVICE_ACCOUNTS.lower() == 'true':
         USE_SERVICE_ACCOUNTS = True
     else:
-        USE_SERVICE_ACCOUNTS = False
+        USE_SERVICE_ACCOUNTS = True
 except KeyError:
-    USE_SERVICE_ACCOUNTS = False
+    USE_SERVICE_ACCOUNTS = True
 try:
     BLOCK_MEGA_FOLDER = getConfig('BLOCK_MEGA_FOLDER')
     if BLOCK_MEGA_FOLDER.lower() == 'true':
@@ -288,9 +288,9 @@ except KeyError:
 try:
     IMAGE_URL = getConfig('IMAGE_URL')
     if len(IMAGE_URL) == 0:
-        IMAGE_URL = 'https://imagetot.com/images/2021/06/28/e8155fe3d87a1084d7cda5f4ecc5211c.jpg'
+        IMAGE_URL = 'https://telegra.ph/file/e2fa5a263746fe370ec04.jpg'
 except KeyError:
-    IMAGE_URL = 'https://imagetot.com/images/2021/06/28/e8155fe3d87a1084d7cda5f4ecc5211c.jpg'
+    IMAGE_URL = 'https://telegra.ph/file/e2fa5a263746fe370ec04.jpg'
 
 IGNORE_PENDING_REQUESTS = False
 try:
